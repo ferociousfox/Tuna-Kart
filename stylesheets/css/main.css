@@ -1,3 +1,28 @@
+body {
+  width: 1000px;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: visible; }
 
+.kart-div {
+  margin: 0; }
+
+.kart-body {
+  margin: 0;
+  width: 250px;
+  height: 125px;
+  background: red; }
+
+.wheel-div {
+  width: 250px;
+  display: flex;
+  justify-content: space-between; }
+  .wheel-div .wheel1, .wheel-div .wheel2 {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background: black; }
 
 /*# sourceMappingURL=main.css.map */
