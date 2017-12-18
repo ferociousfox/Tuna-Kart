@@ -1,0 +1,23 @@
+.kart-div {
+  margin: 0;
+}
+
+.kart-body {
+  margin: 0;
+  width: 250px;
+  height: 125px;
+  background: red;
+}
+
+.wheel-div {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+
+  .wheel1, .wheel2 {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background: black;
+  }
+}
