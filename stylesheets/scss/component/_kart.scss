@@ -1,9 +1,23 @@
 #bigT {
-  position: relative;
-  left: 0;
+  .kart-body {
+    background: green;
+  }
+}
+#npc1 {
+  .kart-body {
+    background: blue;
+  }
+}
+#npc2 {
+  .kart-body {
+    background: red;
+  }
 }
 .kart-div {
+  position: relative;
+  left: 0;
   margin: 0;
+  transition: all 0.25s;
 }
 
 .kart-body {
@@ -19,6 +33,8 @@
   justify-content: space-between;
 
   .wheel1, .wheel2 {
+    position: relative;
+    top: -25px;
     width: 75px;
     height: 75px;
     border-radius: 50%;

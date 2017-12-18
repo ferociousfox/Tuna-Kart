@@ -6,12 +6,20 @@ body {
   justify-content: flex-end;
   overflow: visible; }
 
-#bigT {
-  position: relative;
-  left: 0; }
+#bigT .kart-body {
+  background: green; }
+
+#npc1 .kart-body {
+  background: blue; }
+
+#npc2 .kart-body {
+  background: red; }
 
 .kart-div {
-  margin: 0; }
+  position: relative;
+  left: 0;
+  margin: 0;
+  transition: all 0.25s; }
 
 .kart-body {
   margin: 0;
@@ -24,6 +32,8 @@ body {
   display: flex;
   justify-content: space-between; }
   .wheel-div .wheel1, .wheel-div .wheel2 {
+    position: relative;
+    top: -25px;
     width: 75px;
     height: 75px;
     border-radius: 50%;
