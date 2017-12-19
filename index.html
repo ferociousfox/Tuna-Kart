@@ -2,111 +2,169 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    <script src="js/scripts.js" charset="utf-8"></script>
     <link rel="stylesheet" href="stylesheets/css/main.css">
     <title>TunaKart</title>
   </head>
   <body>
-    <div id="npc1"class="cart-body">
-      <div class="player-body">
-      </div>
-      <div class="number">
-       <span>5</span>
-      </div>
-
-      <div class="wind-screen">
-      </div>
-
-      <div class="steering-wheel">
-      </div>
-
-      <div class="rear-tire">
-        <div class="rear-wheel">
-          <div class="hub">
-          </div>
-        </div>
-      </div>
-
-      <div class="front-tire">
-        <div class="front-wheel">
-          <div class="hub">
-          </div>
-        </div>
-      </div>
-
-      <div class="exhaust1">
-      </div>
-      <div class="exhaust2">
-      </div>
-
-
+    <img src="img/cloud.png" class="cloud" alt="">
+    <img src="img/cloud.png" class="cloud" alt="">
+    <button type="button" id="start-race" name="button">Start</button>
+    <div class="grass">
+      <img src="img/tree.png" class="tree" alt="">
+      <img src="img/tree.png" class="tree" alt="">
     </div>
-    <div id="npc2"class="cart-body2">
-      <div class="player-body">
-      </div>
-      <div class="number2">
-       <span>13</span>
-      </div>
+    <div class="track">
+      <div class="scale">
+        <div id="npc1"class="cart-body">
+          <div class="player-body">
+          </div>
+          <div class="number">
+           <span>5</span>
+          </div>
 
-      <div class="wind-screen">
-      </div>
+          <div class="wind-screen">
+          </div>
 
-      <div class="steering-wheel">
-      </div>
+          <div class="steering-wheel">
+          </div>
 
-      <div class="rear-tire">
-        <div class="rear-wheel">
-          <div class="hub">
+          <div class="rear-tire">
+            <div class="rear-wheel">
+              <div class="hub">
+              </div>
+            </div>
+          </div>
+
+          <div class="front-tire">
+            <div class="front-wheel">
+              <div class="hub">
+              </div>
+            </div>
+          </div>
+
+          <div class="exhaust1">
+          </div>
+          <div class="exhaust2">
           </div>
         </div>
       </div>
 
-      <div class="front-tire">
-        <div class="front-wheel">
-          <div class="hub">
+      <div class="scale">
+        <div id="npc2"class="cart-body2">
+          <div class="player-body">
+          </div>
+          <div class="number2">
+           <span>13</span>
+          </div>
+
+          <div class="wind-screen">
+          </div>
+
+          <div class="steering-wheel">
+          </div>
+
+          <div class="rear-tire">
+            <div class="rear-wheel">
+              <div class="hub">
+              </div>
+            </div>
+          </div>
+
+          <div class="front-tire">
+            <div class="front-wheel">
+              <div class="hub">
+              </div>
+            </div>
+          </div>
+
+          <div class="exhaust1">
+          </div>
+          <div class="exhaust2">
           </div>
         </div>
       </div>
 
-      <div class="exhaust1">
-      </div>
-      <div class="exhaust2">
-      </div>
+      <div class="scale">
+        <div id="bigT"class="cart-body3">
+          <div class="player-body">
+          </div>
+          <div class="number3">
+           <span>T</span>
+          </div>
 
+          <div class="wind-screen">
+          </div>
 
-    </div>
-    <div id="bigT"class="cart-body3">
-      <div class="player-body">
-      </div>
-      <div class="number3">
-       <span>T</span>
-      </div>
+          <div class="steering-wheel">
+          </div>
 
-      <div class="wind-screen">
-      </div>
+          <div class="rear-tire">
+            <div class="rear-wheel">
+              <div class="hub">
+              </div>
+            </div>
+          </div>
 
-      <div class="steering-wheel">
-      </div>
+          <div class="front-tire">
+            <div class="front-wheel">
+              <div class="hub">
+              </div>
+            </div>
+          </div>
 
-      <div class="rear-tire">
-        <div class="rear-wheel">
-          <div class="hub">
+          <div class="exhaust1">
+          </div>
+          <div class="exhaust2">
           </div>
         </div>
       </div>
 
-      <div class="front-tire">
-        <div class="front-wheel">
-          <div class="hub">
-          </div>
+      <div class="wrap">
+        <div class="road">
+          <div class="lines"></div>
+          <div class="lines"></div>
+          <div class="lines"></div>
+          <div class="lines"></div>
+          <div class="lines"></div>
+          <div class="lines"></div>
+          <div class="lines"></div>
+          <div class="lines"></div>
+          <div class="lines"></div>
+          <div class="lines"></div>
+          <div class="lines"></div>
+          <div class="lines"></div>
+          <div class="lines"></div>
+          <div class="lines"></div>
+          <div class="lines"></div>
+          <div class="lines"></div>
+        </div>
+        <div class="road">
+          <div class="lines"></div>
+          <div class="lines"></div>
+          <div class="lines"></div>
+          <div class="lines"></div>
+          <div class="lines"></div>
+          <div class="lines"></div>
+          <div class="lines"></div>
+          <div class="lines"></div>
+          <div class="lines"></div>
+          <div class="lines"></div>
+          <div class="lines"></div>
+          <div class="lines"></div>
+          <div class="lines"></div>
+          <div class="lines"></div>
+          <div class="lines"></div>
+          <div class="lines"></div>
         </div>
       </div>
+    </div> <!-- track 1 -->
 
-      <div class="exhaust1">
-      </div>
-      <div class="exhaust2">
-      </div>
 
-    </div>
     <!-- <div class="finish">
       <div class="check"></div>
       <div class="check"></div>

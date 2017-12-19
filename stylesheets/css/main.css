@@ -1,3 +1,20 @@
+.finish {
+  height: 900px;
+  width: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  border: solid black 1px;
+}
+
+.check {
+  border: solid black 1px;
+  height: 100%;
+}
+.check:nth-of-type(odd) {
+  background: black;
+}
+
 body {
   height: 100vh;
   background-color: skyblue;
@@ -8,30 +25,47 @@ body {
 }
 
 .scale {
-  transform: scale(.6);
+  transform: scale(0.6);
   position: absolute;
   z-index: 29573459034734967349;
   top: -17px;
 }
+
 .scale:nth-child(2) {
   top: 139px;
 }
+
 .scale:nth-child(3) {
   top: 300px;
 }
 
 .cart-body {
-  @include makeKart;
+  height: 120px;
+  width: 300px;
+  border-radius: 30% 70% 30% 15%;
+  position: relative;
+  left: 40px;
   background: silver;
 }
+
 .cart-body2 {
-  @include makeKart;
+  height: 120px;
+  width: 300px;
+  border-radius: 30% 70% 30% 15%;
+  position: relative;
+  left: 40px;
   background: purple;
 }
+
 .cart-body3 {
-  @include makeKart;
+  height: 120px;
+  width: 300px;
+  border-radius: 30% 70% 30% 15%;
+  position: relative;
+  left: 40px;
   background: blue;
 }
+
 .number {
   border-radius: 50%;
   height: 95px;
@@ -45,6 +79,7 @@ body {
   top: 17%;
   overflow: hidden;
 }
+
 .number2 {
   border-radius: 50%;
   height: 95px;
@@ -58,6 +93,7 @@ body {
   top: 17%;
   overflow: hidden;
 }
+
 .number3 {
   border-radius: 50%;
   height: 95px;
@@ -71,6 +107,7 @@ body {
   top: 17%;
   overflow: hidden;
 }
+
 .player-body {
   background: black;
   height: 80px;
@@ -79,8 +116,7 @@ body {
   left: 20%;
   top: -35%;
   z-index: -1;
-  border-radius: 30%
-
+  border-radius: 30%;
 }
 
 .number span, .number2 span, .number3 span {
@@ -90,16 +126,18 @@ body {
 .number span {
   font-size: 145px;
 }
+
 .number2 span {
   font-size: 91px;
 }
+
 .number3 span {
   font-size: 104px;
 }
 
 .front-tire {
   background: black;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   height: 70px;
@@ -110,15 +148,14 @@ body {
   bottom: -15%;
 }
 
-.front-wheel{
+.front-wheel {
   background: white;
   height: 49px;
   width: 49px;
   border-radius: 50%;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .rear-tire {
@@ -126,19 +163,20 @@ body {
   height: 90px;
   width: 90px;
   border-radius: 50%;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
   left: -5%;
   bottom: -15%;
 }
+
 .rear-wheel {
   background: white;
   height: 59px;
   width: 59px;
   border-radius: 50%;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -155,11 +193,12 @@ body {
   height: 40px;
   width: 60px;
   position: absolute;
-  z-index:-1;
+  z-index: -1;
   border-radius: 0% 100% 0% 0%;
-  top:-15%;
+  top: -15%;
   right: 28%;
 }
+
 .steering-wheel {
   background: black;
   height: 50px;
@@ -170,8 +209,9 @@ body {
   right: 52%;
   z-index: -1;
 }
+
 .exhaust1 {
-  background:grey;
+  background: grey;
   position: absolute;
   height: 16px;
   width: 80px;
@@ -180,10 +220,10 @@ body {
   z-index: -1;
   border-radius: 5px;
   border: solid 1px;
-
 }
+
 .exhaust2 {
-  background:grey;
+  background: grey;
   position: absolute;
   height: 16px;
   width: 80px;
@@ -192,5 +232,108 @@ body {
   z-index: -2;
   border-radius: 5px;
   border: solid 1px;
-
 }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.track {
+  position: relative;
+  width: 100%;
+}
+
+.wrap {
+  background-color: #333;
+  width: 100%;
+  height: 438px;
+  border-top: 10px solid #111;
+  border-bottom: 10px solid #111;
+  overflow: hidden;
+}
+
+.road {
+  background-color: #333;
+  height: 130px;
+  width: 100%;
+  margin-bottom: 2rem;
+  transform: skew(130deg);
+  position: relative;
+  overflow: hidden;
+}
+
+.lines {
+  height: 10px;
+  width: 130px;
+  background-color: #fff;
+  position: absolute;
+  top: 80%;
+}
+
+.lines:nth-child(1) {
+  left: 0px;
+}
+
+.lines:nth-child(2) {
+  left: 167px;
+}
+
+.lines:nth-child(3) {
+  left: 334px;
+}
+
+.lines:nth-child(4) {
+  left: 501px;
+}
+
+.lines:nth-child(5) {
+  left: 668px;
+}
+
+.lines:nth-child(6) {
+  left: 835px;
+}
+
+.lines:nth-child(7) {
+  left: 1002px;
+}
+
+.lines:nth-child(8) {
+  left: 1169px;
+}
+
+.lines:nth-child(9) {
+  left: 1336px;
+}
+
+.lines:nth-child(10) {
+  left: 1503px;
+}
+
+.lines:nth-child(11) {
+  left: 1670px;
+}
+
+.lines:nth-child(12) {
+  left: 1837px;
+}
+
+.lines:nth-child(13) {
+  left: 2004px;
+}
+
+.lines:nth-child(14) {
+  left: 2171px;
+}
+
+.lines:nth-child(15) {
+  left: 2338px;
+}
+
+.lines:nth-child(16) {
+  left: 2505px;
+}
+
+/*# sourceMappingURL=main.css.map */
