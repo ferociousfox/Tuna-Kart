@@ -1,0 +1,28 @@
+.sky {
+  position: relative;
+  width: 100%;
+  height: 35%;
+  overflow: hidden;
+  .small-cloud, .cloud {
+    position: absolute;
+  }
+  .small-cloud {
+    opacity: .6;
+    width: 18%;
+    top: 0px;
+    animation: slide 35s linear infinite;
+  }
+  .cloud {
+    bottom: 10px;
+    animation: slide 30s linear infinite;
+  }
+}
+
+@keyframes slide {
+  0% {
+    right: -350px;
+  }
+  100% {
+    right: 100%;
+  }
+}

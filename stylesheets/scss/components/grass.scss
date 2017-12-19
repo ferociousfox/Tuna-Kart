@@ -1,0 +1,36 @@
+.grass {
+  height: 30%;
+  background-color: green;
+  width: 100%;
+  position: relative;
+  .small-tree, .tree, .tree1, .tree2 {
+    position: absolute;
+  }
+  .small-tree {
+    max-width: 7%;
+    left: 21%;
+    &:nth-child(2) {
+      top: 29%;
+      left: 47%;
+    }
+    &:nth-child(3) {
+      top: 5%;
+      left: 59%;
+    }
+  }
+  .tree {
+    max-width: 15%;
+    top:  10%;
+    left: 32%;
+  }
+  .tree1 {
+    max-width: 15%;
+    top: 15%;
+    left: 68%;
+  }
+  .tree2 {
+    max-width: 15%;
+    left: 9%;
+    top: 14%;
+  }
+}
