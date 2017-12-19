@@ -10,7 +10,6 @@ $(document).ready(function(){
         if (raceOngoing) {
           var inputtedWord = [];
           function userInput(inputtedWord){
-            var keypress = ;
           };
           inputtedWord = $("#input-div").val().split("");
           moveKart("#bigT", 10);
