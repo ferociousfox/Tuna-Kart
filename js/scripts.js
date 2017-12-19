@@ -7,13 +7,16 @@ $(document).ready(function(){
       raceOngoing = true;
       var currentLetterIndex = 0;
       var randomWord = getRandomWord(); console.log(randomWord);
-      npcTravel();
+      npcTravel(raceOngoing);
       $("body").keyup(function(e){
         if (raceOngoing) {
           var currentLetterCharacter = randomWord[currentLetterIndex];
           if (e.keyCode === currentLetterCharacter.keyCode) {
             $("#input-div").append(currentLetterCharacter);
             moveKart("#bigT", 10);
+            if (randomWord.length === currentLetterIndex + 1) {
+              randomWord = getRandomWord();
+            }
           }
         } // if raceOngoing
       }); // keyup
