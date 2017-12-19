@@ -14,10 +14,28 @@
 .cart-body {
   @include makeKart;
   background: silver;
+  .face {
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    z-index: 32038967839679;
+    width: 60%;
+    transform-origin: bottom;
+    animation: bobble .6s 0.3s linear infinite alternate;
+  }
 }
 .cart-body2 {
   @include makeKart;
   background: purple;
+  .face {
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    z-index: 32038967839679;
+    width: 60%;
+    transform-origin: bottom;
+    animation: bobble .6s linear 1s infinite alternate;
+  }
 }
 .cart-body3 {
   @include makeKart;
@@ -25,9 +43,9 @@
   .face {
     position: absolute;
     bottom: 70px;
-    left: 0;
+    left: -10px;
     z-index: 32038967839679;
-    width: 60%;
+    width: 77%;
     transform-origin: bottom;
     animation: bobble .6s linear infinite alternate;
   }
