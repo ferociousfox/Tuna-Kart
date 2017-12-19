@@ -1,21 +1,25 @@
+var npc1 = "#npc1";
+var npc2 = "#npc2";
+var raceOngoing = false;
 $(document).ready(function(){
-  var npc1 = "#npc1";
-  var npc2 = "#npc2";
-  var raceOngoing = false;
-    $('button#start-race').click(function(){
-      if (!raceOngoing) { // is raceOngoing false?
+  $('button#start-race').click(function(){
+    if (!raceOngoing) { // is raceOngoing false?
       raceOngoing = true;
-      var amt = 0;
+      var currentLetterIndex = 0;
+      var randomWord = getRandomWord(); console.log(randomWord);
+      npcTravel(raceOngoing);
       $("body").keyup(function(e){
         if (raceOngoing) {
-          var inputtedWord = [];
-          function userInput(inputtedWord){
-          };
-          inputtedWord = $("#input-div").val().split("");
-          moveKart("#bigT", 10);
+          var currentLetterCharacter = randomWord[currentLetterIndex];
+          if (e.keyCode === currentLetterCharacter.keyCode) {
+            $("#input-div").append(currentLetterCharacter);
+            moveKart("#bigT", 10);
+            if (randomWord.length === currentLetterIndex + 1) {
+              randomWord = getRandomWord();
+            }
+          }
         } // if raceOngoing
       }); // keyup
-      npcTravel();
     } // if raceOngoing
   }); // button start-race
 });

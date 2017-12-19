@@ -6,27 +6,32 @@
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
+    <script src="js/moveKart.js" charset="utf-8"></script>
+    <script src="js/npcTravel.js" charset="utf-8"></script>
+    <script src="js/typingGame.js" charset="utf-8"></script>
     <script src="js/scripts.js" charset="utf-8"></script>
     <link rel="stylesheet" href="stylesheets/css/main.css">
     <title>TunaKart</title>
   </head>
   <body>
     <div class="sky">
-      <img src="img/cloud.png" class="small-cloud" alt="">
+      <img src="img/cloud.png" class="cloud" alt="">
       <img src="img/cloud.png" class="cloud" alt="">
     </div>
+
     <button type="button" id="start-race" name="button">Start</button>
     <div class="grass">
       <img src="img/tree.png" class="small-tree" alt="">
-      <img src="img/tree.png" class="small-tree" alt="">
+      <img src="img/tree.png" class="tree" alt="">
       <img src="img/tree.png" class="small-tree" alt="">
       <img src="img/tree.png" class="tree" alt="">
-      <img src="img/tree.png" class="tree1" alt="">
-      <img src="img/tree.png" class="tree2" alt="">
+      <img src="img/tree.png" class="tree" alt="">
+      <img src="img/tree.png" class="tree" alt="">
+      <img src="img/tree.png" class="small-tree" alt="">
     </div>
     <div class="track">
-      <div class="scale">
-        <div id="npc1"class="cart-body">
+      <div class="scale" id="npc1">
+        <div class="cart-body">
           <div class="player-body">
           </div>
           <div class="number">
@@ -97,6 +102,7 @@
 
       <div class="scale">
         <div id="bigT"class="cart-body3">
+          <img src="img/tyler-face.png" class="face" alt="">
           <div class="player-body">
           </div>
           <div class="number3">
