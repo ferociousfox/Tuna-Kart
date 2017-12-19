@@ -4,7 +4,7 @@ $(document).ready(function(){
   var raceOngoing = false;
   function moveKart(kart, amt){
     leftValue = parseInt($(kart).css('left'));
-    if (leftValue >= 50) { // check for victory postion
+    if (leftValue >= 700) { // check for victory postion
       raceOngoing = false;
       $("#bigT").css('left', '0');
       $("#npc1").css('left', '0');
