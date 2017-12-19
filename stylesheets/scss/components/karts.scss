@@ -1,32 +1,36 @@
 body {
-  height: 500px;
-  background: darkgray;
+  height: 100vh;
+  background-color: skyblue;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+}
+
+.scale {
+  transform: scale(.6);
+  position: absolute;
+  z-index: 29573459034734967349;
+  top: -17px;
+}
+.scale:nth-child(2) {
+  top: 139px;
+}
+.scale:nth-child(3) {
+  top: 300px;
 }
 
 .cart-body {
-  height: 120px;
-  width: 300px;
+  @include makeKart;
   background: silver;
-  border-radius: 30% 70% 30% 15%;
-  position: relative;
 }
 .cart-body2 {
-  height: 120px;
-  width: 300px;
+  @include makeKart;
   background: purple;
-  border-radius: 30% 70% 30% 15%;
-  position: relative;
 }
 .cart-body3 {
-  height: 120px;
-  width: 300px;
+  @include makeKart;
   background: blue;
-  border-radius: 30% 70% 30% 15%;
-  position: relative;
 }
 .number {
   border-radius: 50%;
@@ -79,16 +83,17 @@ body {
 
 }
 
-.number span {
+.number span, .number2 span, .number3 span {
   font-weight: bold;
+}
+
+.number span {
   font-size: 145px;
 }
 .number2 span {
-  font-weight: bold;
   font-size: 91px;
 }
 .number3 span {
-  font-weight: bold;
   font-size: 104px;
 }
 
@@ -137,12 +142,12 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .hub {
   background: black;
   height: 15px;
   width: 15px;
   border-radius: 50%;
-
 }
 
 .wind-screen {

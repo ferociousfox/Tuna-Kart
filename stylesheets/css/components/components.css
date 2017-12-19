@@ -1,0 +1,18 @@
+.finish {
+  height: 900px;
+  width: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  border: solid black 1px;
+}
+
+.check {
+  border: solid black 1px;
+  height: 100%;
+}
+.check:nth-of-type(odd) {
+  background: black;
+}
+
+/*# sourceMappingURL=components.css.map */

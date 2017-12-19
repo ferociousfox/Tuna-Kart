@@ -1,35 +1,45 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 $width: 130px;
+$lines: 16;
 
+.track {
+  position: relative;
+  width: 100%;
+}
 
 .wrap {
   background-color: #333;
+  width: 100%;
+  height: 438px;
+  border-top: 10px solid #111;
+  border-bottom: 10px solid #111;
+  overflow: hidden;
 }
 
 .road {
   background-color: #333;
-  height: 250px;
+  height: 130px;
   width: 100%;
   margin-bottom: 2rem;
   transform: skew(130deg);
   position: relative;
   overflow: hidden;
-  border-top: 10px solid #111;
-  border-bottom: 10px solid #111;
 }
 
 .lines {
-  height: 20px;
+  height: 10px;
   width: $width;
   background-color: #fff;
   position: absolute;
-  top: 45%;
+  top: 80%;
 }
 
-@for $i from 1 through 16 {
+@for $i from 1 through $lines {
   $value: 167px * ($i - 1);
   .lines:nth-child(#{$i}) {
     left: $value;
