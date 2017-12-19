@@ -10,11 +10,51 @@ body {
 .cart-body {
   height: 120px;
   width: 300px;
-  background: crimson;
+  background: silver;
+  border-radius: 30% 70% 30% 15%;
+  position: relative;
+}
+.cart-body2 {
+  height: 120px;
+  width: 300px;
+  background: purple;
+  border-radius: 30% 70% 30% 15%;
+  position: relative;
+}
+.cart-body3 {
+  height: 120px;
+  width: 300px;
+  background: blue;
   border-radius: 30% 70% 30% 15%;
   position: relative;
 }
 .number {
+  border-radius: 50%;
+  height: 95px;
+  width: 95px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 37%;
+  top: 17%;
+  overflow: hidden;
+}
+.number2 {
+  border-radius: 50%;
+  height: 95px;
+  width: 95px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 37%;
+  top: 17%;
+  overflow: hidden;
+}
+.number3 {
   border-radius: 50%;
   height: 95px;
   width: 95px;
@@ -39,9 +79,17 @@ body {
 
 }
 
-span {
+.number span {
   font-weight: bold;
   font-size: 145px;
+}
+.number2 span {
+  font-weight: bold;
+  font-size: 91px;
+}
+.number3 span {
+  font-weight: bold;
+  font-size: 104px;
 }
 
 .front-tire {
