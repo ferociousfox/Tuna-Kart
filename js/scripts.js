@@ -1,13 +1,18 @@
-var npc1 = "#npc1";
-var npc2 = "#npc2";
 var raceOngoing = false;
+var npcInterval = undefined;
 $(document).ready(function(){
   $('button#start-race').click(function(){
     if (!raceOngoing) { // is raceOngoing false?
       raceOngoing = true;
       var currentLetterIndex = 0;
       var randomWord = getRandomWord(); console.log(randomWord);
-      npcTravel(raceOngoing);
+      npcInterval = setInterval(npcTravel, 500);
+      function npcTravel() {
+        var amt = Math.ceil(Math.random()*20);
+        moveKart("#npc1", amt);
+        var amt = Math.ceil(Math.random()*20);
+        moveKart("#npc2", amt);
+      } // function npcTravel
       $("body").keyup(function(e){
         if (raceOngoing) {
           var currentLetterCharacter = randomWord[currentLetterIndex];
