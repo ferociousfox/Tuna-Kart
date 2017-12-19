@@ -1,0 +1,13 @@
+function moveKart(kart, amt){
+  leftValue = parseInt($(kart).css('left'));
+  if (leftValue >= 50) { // check for victory postion
+    raceOngoing = false;
+    $("#bigT").css('left', '0');
+    $("#npc1").css('left', '0');
+    $("#npc2").css('left', '0');
+    alert(kart + ' wins!');
+  } else { // keep racing
+    leftValue += amt;
+    $(kart).css('left', leftValue + 'px');
+  } // if leftValue
+}; // function  moveKart
