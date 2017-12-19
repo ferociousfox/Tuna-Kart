@@ -7,19 +7,19 @@
     position: absolute;
   }
   .small-tree {
-    max-width: 7%;
+    max-width: 5%;
     left: 21%;
     &:nth-child(3) {
       top: 29%;
-      left: 47%;
+      left: 50%;
     }
     &:nth-child(6) {
       top: 5%;
       left: 59%;
     }
     &:nth-child(7) {
-      top: 55%;
-      left: 20%;
+      top: 45%;
+      left: 25%;
     }
   }
   .tree {

@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.7/howler.js" charset="utf-8"></script>
     <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -11,6 +12,12 @@
     <script src="js/typingGame.js" charset="utf-8"></script>
     <script src="js/scripts.js" charset="utf-8"></script>
     <link rel="stylesheet" href="stylesheets/css/main.css">
+    <script type="text/javascript">
+    var sound = new Howl({
+      src: ['car+start3.mp3']
+      });
+      sound.play();
+    </script>
     <title>TunaKart</title>
   </head>
   <body>
@@ -32,6 +39,7 @@
     <div class="track">
       <div class="scale" id="npc1">
         <div class="cart-body">
+          <img src="img/vin.png" class="face" alt="">
           <div class="player-body">
           </div>
           <div class="number">
@@ -67,6 +75,7 @@
 
       <div class="scale">
         <div id="npc2"class="cart-body2">
+          <img src="img/paul.png" class="face" alt="">
           <div class="player-body">
           </div>
           <div class="number2">
@@ -174,8 +183,8 @@
           <div class="lines"></div>
         </div>
       </div>
+      <img src="img/flag.jpg" class="flag" alt="">
     </div> <!-- track 1 -->
-
 
     <!-- <div class="finish">
       <div class="check"></div>
@@ -203,5 +212,6 @@
       <div class="check"></div>
       <div class="check"></div>
     </div> -->
+
   </body>
 </html>
