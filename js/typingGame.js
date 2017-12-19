@@ -1,4 +1,4 @@
-const list =['SWEET', 'SWEET', 'SWEET', 'SWEET', 'SWEET', 'SWEET', 'INTERPOLATE', 'COOL', 'COOL', 'COOLCOOL', 'COOLCOOL', 'NICE', 'AWESOME', 'TOTALLY', 'ANYQUESTIONS', 'NOTHINGTOREPORT', 'SCOPE', 'FUNCTION', 'VARIABLE'];
+const list =['SWEET', 'SWEET', 'SWEET', 'SWEET', 'SWEET', 'SWEET', 'INTERPOLATE', 'COOL', 'COOL', 'COOLCOOL', 'COOLCOOLCOOL', 'NICE', 'AWESOME', 'TOTALLY', 'ANYQUESTIONS', 'NOTHINGTOREPORT', 'SCOPE', 'FUNCTION', 'VARIABLE'];
 
 //
 // -function random() for grabbing words from list randomly
@@ -13,10 +13,7 @@ const list =['SWEET', 'SWEET', 'SWEET', 'SWEET', 'SWEET', 'SWEET', 'INTERPOLATE'
 //
 // 2. move kart with moveKart(kart, 10) for each letter;
 
-
-
-  var randomWord = function() {
+  function getRandomWord() {
     var selectedWord = list[Math.floor(Math.random() * list.length)];
-    selectedWord.split("");
-
-  };
+    return selectedWord.split("");
+  }
