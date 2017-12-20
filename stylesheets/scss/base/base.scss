@@ -25,12 +25,11 @@ img {
   width: 400px;
   height: 200px;
   background-color: rgba(255, 50, 120, 0.7);
+  font-size: 3em;
 
 
   span {
     background: lightgrey;
-    padding: 13px;
     font-family: $graffiti-font;
-    font-size: 3.5em;
   }
 }

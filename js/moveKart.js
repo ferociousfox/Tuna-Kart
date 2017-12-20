@@ -1,6 +1,6 @@
 function moveKart(kart, amt){
   var leftValue = parseInt($(kart).css('left'));
-  if (leftValue >= 100) { // check for victory postion
+  if (leftValue >= 500) { // check for victory postion
     clearTimeout(npcInterval);
     $("#bigT").css('left', '0');
     $("#npc1").css('left', '0');
