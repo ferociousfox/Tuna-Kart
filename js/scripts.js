@@ -6,7 +6,7 @@ $(document).ready(function(){
 function winnerName(kart){
   switch (kart) {
     case '#bigT':
-      return 'BIG TUUUUUNNNNAAAAA';
+      return 'BIG TUNA';
       break;
     case '#npc1':
       return 'Vin Diesel';
