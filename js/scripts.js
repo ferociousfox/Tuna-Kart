@@ -6,6 +6,7 @@ $(document).ready(function(){
       raceOngoing = true;
       var currentLetterIndex = 0;
       var randomWord = getRandomWord(); console.log(randomWord);
+      $("#word").text(randomWord);
       npcInterval = setInterval(npcTravel, 500);
       function npcTravel() {
         var amt = Math.ceil(Math.random()*20);
@@ -13,14 +14,25 @@ $(document).ready(function(){
         var amt = Math.ceil(Math.random()*20);
         moveKart("#npc2", amt);
       } // function npcTravel
-      $("body").keyup(function(e){
+      $("body").keypress(function(e){
         if (raceOngoing) {
           var currentLetterCharacter = randomWord[currentLetterIndex];
-          if (e.keyCode === currentLetterCharacter.keyCode) {
-            $("#input-div").append(currentLetterCharacter);
-            moveKart("#bigT", 10);
+          console.log(currentLetterCharacter.charCodeAt(0));
+          console.log(e.charCode);
+          if (e.charCode === currentLetterCharacter.charCodeAt(0)) {
+            currentLetterIndex++; console.log(currentLetterIndex);
+            moveKart("#bigT", 10); console.log('move tuna');
+            $("#word").empty(); console.log('empty');
+            for (var i = 0; i < currentLetterIndex; i++) {
+              $("#word").append("<span>" + currentLetterCharacter + "<span>"); console.log('currentLetterCharacter');
+            }
+            for (var i = currentLetterIndex; i < randomWord.length; i++) {
+              $("#word").append(randomWord[i]);
+            }
             if (randomWord.length === currentLetterIndex + 1) {
               randomWord = getRandomWord();
+              currentLetterIndex = 0;
+              $("#word").text(randomWord);
             }
           }
         } // if raceOngoing
