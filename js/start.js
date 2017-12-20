@@ -1,5 +1,9 @@
 function startGame(){
   if (!raceOngoing) { // is raceOngoing false?
+    var sound = new Howl({
+      src: ['car+start3.mp3']
+    });
+    sound.play();
     raceOngoing = true;
     var currentLetterIndex = 0;
     var randomWord = getRandomWord(); console.log(randomWord);

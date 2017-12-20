@@ -80,3 +80,12 @@ button {
   font-family: 'nintender';
   font-size: 30px;
 }
+
+.winner {
+  font-size: 25px;
+  display: none;
+  z-index: 100000000;
+  width: 500px;
+  height: 500px;
+  background-color: lightgrey;
+}
