@@ -16,17 +16,20 @@ function startGame(){
         if (e.charCode === currentLetterCharacter.toLowerCase().charCodeAt(0)) {
           currentLetterIndex++;
           moveKart("#bigT", 10);
-          $("#word").empty();
-          for (var i = 0; i < currentLetterIndex; i++) {
-            $("#word").append("<span>" + randomWord[i] + "<span>");
-          }
-          for (var i = currentLetterIndex; i < randomWord.length; i++) {
-            $("#word").append(randomWord[i]);
-          }
-          if (randomWord.length === currentLetterIndex) {
-            randomWord = getRandomWord();
-            currentLetterIndex = 0;
-            $("#word").text(randomWord.join(""));
+          if (raceOngoing) {
+            if (randomWord.length === currentLetterIndex) { // last letter of word?
+              randomWord = getRandomWord();
+              currentLetterIndex = 0;
+              $("#word").text(randomWord.join(""));
+            } else { // if not last letter of word
+              $("#word").empty();
+              for (var i = 0; i < currentLetterIndex; i++) {
+                $("#word").append("<span>" + randomWord[i] + "<span>");
+              }
+              for (var i = currentLetterIndex; i < randomWord.length; i++) {
+                $("#word").append(randomWord[i]);
+              }
+            }
           }
         }
       } // if raceOngoing
