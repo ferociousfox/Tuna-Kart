@@ -16,3 +16,21 @@ body {
 img {
   max-width: 100%;
 }
+
+.word {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100000000;
+  width: 400px;
+  height: 200px;
+  background-color: rgba(255, 50, 120, 0.7);
+
+
+  span {
+    background: lightgrey;
+    padding: 13px;
+    font-family: $graffiti-font;
+    font-size: 3.5em;
+  }
+}
