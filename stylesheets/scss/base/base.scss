@@ -45,7 +45,7 @@ img {
   }
 }
 
-.word {
+#word {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,10 +82,13 @@ button {
 }
 
 .winner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 25px;
-  display: none;
   z-index: 100000000;
   width: 500px;
-  height: 500px;
-  background-color: lightgrey;
+  height: 200px;
+  /* background-color: lightgrey; */
+  margin-top: 20px;
 }
