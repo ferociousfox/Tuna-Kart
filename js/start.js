@@ -7,6 +7,10 @@ function startGame(){
       src: ['car+start3.mp3']
     });
     sound.play();
+    $('.flag').removeClass('slide');
+    $("#bigT").css('left', '0');
+    $("#npc1").css('left', '0');
+    $("#npc2").css('left', '0');
     $(".winner h1").hide();
     $("#word").text(randomWord.join(""));
     npcInterval = setInterval(npcTravel, 500);
@@ -15,7 +19,7 @@ function startGame(){
         var currentLetterCharacter = randomWord[currentLetterIndex];
         if (e.charCode === currentLetterCharacter.toLowerCase().charCodeAt(0)) {
           currentLetterIndex++;
-          moveKart("#bigT", 10);
+          moveKart("#bigT", 60);
           if (raceOngoing) {
             if (randomWord.length === currentLetterIndex) { // last letter of word?
               randomWord = getRandomWord();
