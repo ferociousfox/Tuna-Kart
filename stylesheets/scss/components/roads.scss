@@ -61,7 +61,7 @@
   $value: 167px * ($i - 1);
   .lines:nth-child(#{$i}) {
     left: $value;
-    // animation: stripes 1s linear infinite;
+    animation: stripes 1s linear infinite;
   }
   @keyframes stripes {
     0% {
