@@ -1,42 +1,19 @@
 .grass {
   height: 30%;
-  background-color: green;
+  background-color: $grass-green;
   width: 100%;
   position: relative;
-  .small-tree, .tree, .tree1, .tree2 {
-    position: absolute;
+  background-image: url(../../img/trees.png);
+  background-size: 30% 100%;
+  background-position: 33% 100%;
+  // animation: grass 4s infinite linear;
+}
+
+@keyframes grass {
+  0% {
+    background-position: 86% 100%;
   }
-  .small-tree {
-    max-width: 5%;
-    left: 21%;
-    &:nth-child(3) {
-      top: 29%;
-      left: 50%;
-    }
-    &:nth-child(6) {
-      top: 5%;
-      left: 59%;
-    }
-    &:nth-child(7) {
-      top: 45%;
-      left: 25%;
-    }
-  }
-  .tree {
-    max-width: 15%;
-    top:  10%;
-    left: 32%;
-    &:nth-child(2) {
-      top: 20%;
-      left: 60%;
-    }
-    &:nth-child(5) {
-      top: 30%;
-      left: 4%;
-    }
-    &:nth-child(6) {
-      top: 10%;
-      left: 80%;
-    }
+  100% {
+    background-position: 0% 100%;
   }
 }
