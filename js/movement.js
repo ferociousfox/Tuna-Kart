@@ -1,6 +1,6 @@
 function moveKart(kart, amt){
   var leftValue = parseInt($(kart).css('left'));
-  if (leftValue >= 2300) {
+  if (leftValue >= 2400) {
     $('.flag').addClass('slide');
   }
   if (leftValue >= 2500) { // check for victory postion
@@ -16,8 +16,8 @@ function moveKart(kart, amt){
   } // if leftValue
 }; // function  moveKart
 function npcTravel() {
-  var amt = Math.ceil(Math.random()*225);
+  var amt = Math.ceil(Math.random()*80);
   moveKart("#npc1", amt);
-  var amt = Math.ceil(Math.random()*220);
+  var amt = Math.ceil(Math.random()*80);
   moveKart("#npc2", amt);
 } // function npcTravel

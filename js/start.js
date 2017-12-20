@@ -1,4 +1,5 @@
 function startGame(){
+  this.blur();
   if (!raceOngoing) { // is raceOngoing false?
     raceOngoing = true;
     var currentLetterIndex = 0;

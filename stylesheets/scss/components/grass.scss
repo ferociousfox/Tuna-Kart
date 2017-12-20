@@ -1,12 +1,12 @@
 .grass {
-  height: 30%;
+  height: 40%;
   background-color: $grass-green;
   width: 100%;
   position: relative;
   background-image: url(../../img/trees.png);
   background-size: 30% 100%;
   background-position: 33% 100%;
-  // animation: grass 4s infinite linear;
+  animation: grass 4s infinite linear;
 }
 
 @keyframes grass {
