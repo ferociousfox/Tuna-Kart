@@ -11,6 +11,7 @@
     border-top: 10px solid #111;
     border-bottom: 10px solid #111;
     overflow: hidden;
+    z-index: -10;
     .road {
       background-color: #333;
       height: 130px;
@@ -31,8 +32,30 @@
   .flag {
     height: 34.7vh;
     width: 12%;
+    z-index: 20;
+    position: absolute;
+    right: 1500px;
+    top: 6px;
+    opacity: 0;
+    &.slide {
+      animation: finish-line .8s linear;
+    }
   }
 }//track
+
+@keyframes finish-line {
+  0% {
+    right: 500px;
+    opacity: 0;
+  }
+  50% {
+    opacity: .7;
+  }
+  100% {
+    right: 1500px;
+    opacity: 1;
+  }
+}
 
 @for $i from 1 through $lines {
   $value: 167px * ($i - 1);

@@ -12,7 +12,7 @@ function winnerName(kart){
       return 'Vin Diesel';
       break;
     case '#npc2':
-      return 'Newman!!!';
+      return 'Newman!!?';
       break;
     default:
       console.log('Name not found!!');
