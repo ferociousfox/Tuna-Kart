@@ -1,12 +1,13 @@
 function startGame(){
   if (!raceOngoing) { // is raceOngoing false?
+    raceOngoing = true;
+    var currentLetterIndex = 0;
+    var randomWord = getRandomWord();
     var sound = new Howl({
       src: ['car+start3.mp3']
     });
     sound.play();
-    raceOngoing = true;
-    var currentLetterIndex = 0;
-    var randomWord = getRandomWord(); console.log(randomWord);
+    $(".winner h1").hide();
     $("#word").text(randomWord.join(""));
     npcInterval = setInterval(npcTravel, 500);
     $("body").keypress(function(e){
