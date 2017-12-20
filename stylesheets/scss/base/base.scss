@@ -4,6 +4,22 @@
   margin: 0;
 }
 
+@font-face {
+  font-family: "pixel";
+  src:url('../../pixel.otf');
+}
+
+@font-face {
+  font-family: "nintender";
+  src:url("../../nintender.ttf");
+}
+
+@font-face {
+  font-family: "superMario";
+  src: url('../../superMario.ttf');
+  // format('truetype');
+}
+
 body {
   height: 100vh;
   background-color: skyblue;
@@ -11,10 +27,22 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
+  font-family: monospace;
 }
 
 img {
   max-width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  h1 {
+     font-size: 138px;
+     position: absolute;
+     top: 7%;
+     font-family: 'superMario';
+  }
 }
 
 .word {
@@ -28,6 +56,27 @@ img {
 
 
   span {
-    font-family: $graffiti-font;
+    font-family: 'pixel';
   }
+}
+
+button {
+  font-family: 'pixel';
+  width: 270px;
+  height: 75px;
+  border-radius: 20px;
+  background: #e20e0ed9;
+  text-align: center;
+  padding: 0;
+  font-size: 1.7em;
+  margin-bottom: 20px;
+  &:focus {
+    outline: none;
+  }
+}
+
+.intro {
+  text-align: center;
+  font-family: 'nintender';
+  font-size: 30px;
 }

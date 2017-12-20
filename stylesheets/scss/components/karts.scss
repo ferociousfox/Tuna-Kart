@@ -27,6 +27,9 @@
 .cart-body2 {
   @include makeKart;
   background: purple;
+  span {
+    font-size: 5px;
+  }
   .face {
     position: absolute;
     bottom: 70px;
