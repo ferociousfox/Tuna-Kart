@@ -5,7 +5,7 @@ function moveKart(kart, amt){
     $("#bigT").css('left', '0');
     $("#npc1").css('left', '0');
     $("#npc2").css('left', '0');
-    alert(kart + ' wins!');
+    console.log(kart + ' wins!');
     raceOngoing = false;
   } else { // keep racing
     leftValue += amt;
