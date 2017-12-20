@@ -1,4 +1,4 @@
-function moveKart(kart, amt, raceOngoing){
+function moveKart(kart, amt){
   var leftValue = parseInt($(kart).css('left'));
   if (leftValue >= 500) { // check for victory postion
     clearTimeout(npcInterval);
