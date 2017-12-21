@@ -29,7 +29,7 @@ Tyler's foes, Vin and Newman, are propelled toward the finish line using JavaScr
 
 ## Authors
 
-* **Shane Ryan ** - [GitHub](https://github.com/ferociousfox)
+* **Shane Ryan** - [GitHub](https://github.com/ferociousfox)
 * **John Sawiris** - [GitHub](https://github.com/JohnSawiris)
 * **Chris Knight Johnson** - [GitHub](https://github.com/noodlebrains)
 * **Cat Janowitz** - [GitHub](https://github.com/thatcat13)
