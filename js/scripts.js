@@ -19,7 +19,6 @@ function winnerName(kart){
   }
 };
 $(document).keypress(function(e){
-  console.log('press');
   if (raceOngoing) {
     var currentLetterCharacter = randomWord[currentLetterIndex];
     if (e.charCode === currentLetterCharacter.toLowerCase().charCodeAt()) {
