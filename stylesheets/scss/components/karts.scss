@@ -11,6 +11,12 @@
   top: 300px;
 }
 
+.cart-body, .cart-body2, .cart-body3 {
+  &.transition {
+    transition: all .6s linear;
+  }
+}
+
 .cart-body {
   @include makeKart;
   background: silver;
