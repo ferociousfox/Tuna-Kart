@@ -9,6 +9,7 @@ function moveKart(kart, amt){
 
     $(".winner h1").text(winnerName(kart) + ' wins!');
     $(".winner h1").css('display', 'flex');
+    fireworks();
     raceOngoing = false;
   } else { // keep racing
     leftValue += amt;
@@ -16,8 +17,8 @@ function moveKart(kart, amt){
   } // if leftValue
 }; // function  moveKart
 function npcTravel() {
-  var amt = Math.ceil(Math.random()*80);
+  var amt = Math.ceil(Math.random()*300);
   moveKart("#npc1", amt);
-  var amt = Math.ceil(Math.random()*80);
+  var amt = Math.ceil(Math.random()*300);
   moveKart("#npc2", amt);
 } // function npcTravel

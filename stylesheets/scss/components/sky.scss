@@ -40,18 +40,18 @@
   opacity: 0;
   z-index: 45;
   position: absolute;
-  &:nth-of-type(3){
-    animation: splode 1s linear 1.5s;
-    animation-iteration-count: 4;
-  }
-  &:nth-of-type(4){
-    animation: splode 1s linear 2.7s;
-    animation-iteration-count: 4;
-  }
-  &:nth-of-type(5){
-    animation: splode 1s linear 3.2s;
-    animation-iteration-count: 4;
-  }
+  // &:nth-of-type(3){
+  //   animation: splode 1s linear 1.5s;
+  //   animation-iteration-count: 4;
+  // }
+  // &:nth-of-type(4){
+  //   animation: splode 1s linear 2.7s;
+  //   animation-iteration-count: 4;
+  // }
+  // &:nth-of-type(5){
+  //   animation: splode 1s linear 3.2s;
+  //   animation-iteration-count: 4;
+  // }
 }
 
 @keyframes splode {
