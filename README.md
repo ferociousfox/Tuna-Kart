@@ -1,6 +1,6 @@
 # Tuna-Kart
 
-Group Project, Week5 of CSS
+### Group Project, Week5 of CSS
 Tuna-Kart is a typing game inspired by the classic Mario-Kart Nintendo game. Our game features our teacher, Tyler Suderman, as the protagonist kart-racer. Tyler is racing against 2 other bad guys-- Vin Diesel and Newman (from Seinfeld). First kart-racer across the finish line wins and gains all the glory!
 
 ## Getting Started
@@ -42,5 +42,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to Big Tuna - for being a great Epicodus instructor
-* Inspiration - Themeforest & Wordpress.
+* Thanks to Tyler Suderman (aka Big T, aka Big Tuna) for the inspiration--to build this game and to code!
